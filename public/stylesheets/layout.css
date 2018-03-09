@@ -1,0 +1,11 @@
+.mdl-layout__header-row>* {
+    color: #FFFFFF;
+}
+
+.material-icons {
+    color: #FFFFFF;
+}
+
+.demo-card-wide.mdl-card.mdl-shadow--2dp {
+    margin: 10px auto;
+}

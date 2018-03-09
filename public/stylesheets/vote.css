@@ -1,0 +1,55 @@
+h1 {
+    font-size: 30px;
+    margin: auto;
+}
+
+h2.mdl-card__title-text {
+    font-weight: 900;
+    margin: auto;
+}
+
+.state-bar {
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    background-color: #DDDDDD;
+    box-shadow: #AAA 1px 1px;
+}
+
+#form {
+    margin: 40px 0 0 0;
+}
+
+button#search {
+    margin: 0 0 0 80px;
+}
+
+button#search:hover {
+    margin: -1px 0 1px 80px;
+    box-shadow: #EEEEEE 2px 2px;
+    font-weight: 900;
+}
+
+.now-state {
+    width: 0;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    height: 30px;
+    background-color: aqua;
+}
+
+.demo-card-wide.mdl-card {
+    padding: 3%;
+}
+
+.demo-list-control {
+    width: 300px;
+}
+
+.demo-list-radio {
+    display: inline;
+}
+
+.mdl-list__item.hidden {
+    display: none;
+}
