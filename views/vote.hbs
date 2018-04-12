@@ -1,20 +1,21 @@
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
     <h2 class="mdl-card__title-text">본인의 주소를 입력해주세요</h2>
     <form name="form" id="form" method="post">
-        <input class="mdl-textfield__input" type="hidden" name="currentPage" value="1">
+        <input class="mdl-textfield__input" id="currentPage" type="hidden" name="currentPage" value="1">
         <input class="mdl-textfield__input" type="hidden" name="countPerPage" value="10">
         <input class="mdl-textfield__input" type="hidden" name="resultType" value="json">
         <input class="mdl-textfield__input" name="confmKey" value="TESTJUSOGOKR" type="hidden">
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="input-address-zone">
             <input class="mdl-textfield__input" name="keyword" type="text" id="address">
             <label class="mdl-textfield__label" for="sample3">주소(예: 세종대로 209, 국립중앙박물관, 상암동 1595)</label>
+            <span class="mdl-textfield__error">해당 주소로 검색결과가 없습니다! 다시 입력해주세요!</span>
         </div>
         <!-- Accent-colored raised button -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="search">
             주소검색하기
         </button>
     </form>
-    <ul class="demo-list-control mdl-list">
+    <ul class="demo-list-control mdl-list" id="address-list">
         <li class="mdl-list__item hidden" id="list1">
         <span class="mdl-list__item-primary-content">
             주소 테스트
@@ -31,8 +32,8 @@
             주소 테스트
         </span>
             <span class="mdl-list__item-secondary-action">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"/>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-2">
+                <input type="checkbox" id="list-checkbox-2" class="mdl-checkbox__input"/>
             </label>
         </span>
         </li>
@@ -41,8 +42,8 @@
             주소 테스트
         </span>
             <span class="mdl-list__item-secondary-action">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"/>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-3">
+                <input type="checkbox" id="list-checkbox-3" class="mdl-checkbox__input"/>
             </label>
         </span>
         </li>
@@ -52,8 +53,8 @@
             주소 테스트
         </span>
             <span class="mdl-list__item-secondary-action">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"/>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-4">
+                <input type="checkbox" id="list-checkbox-4" class="mdl-checkbox__input"/>
             </label>
         </span>
         </li>
@@ -63,12 +64,82 @@
             주소 테스트
         </span>
             <span class="mdl-list__item-secondary-action">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"/>
-            </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-5">
+                    <input type="checkbox" id="list-checkbox-5" class="mdl-checkbox__input"/>
+                </label>
+            </span>
+        </li>
+
+        <li class="mdl-list__item hidden" id="list6">
+        <span class="mdl-list__item-primary-content">
+            주소 테스트
         </span>
+            <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-6">
+                    <input type="checkbox" id="list-checkbox-6" class="mdl-checkbox__input"/>
+                </label>
+            </span>
+        </li>
+
+        <li class="mdl-list__item hidden" id="list7">
+        <span class="mdl-list__item-primary-content">
+            주소 테스트
+        </span>
+            <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-7">
+                    <input type="checkbox" id="list-checkbox-7" class="mdl-checkbox__input"/>
+                </label>
+            </span>
+        </li>
+
+        <li class="mdl-list__item hidden" id="list8">
+        <span class="mdl-list__item-primary-content">
+            주소 테스트
+        </span>
+            <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-8">
+                    <input type="checkbox" id="list-checkbox-8" class="mdl-checkbox__input"/>
+                </label>
+            </span>
+        </li>
+
+        <li class="mdl-list__item hidden" id="list9">
+        <span class="mdl-list__item-primary-content">
+            주소 테스트
+        </span>
+            <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-9">
+                    <input type="checkbox" id="list-checkbox-9" class="mdl-checkbox__input"/>
+                </label>
+            </span>
+        </li>
+
+        <li class="mdl-list__item hidden" id="list10">
+        <span class="mdl-list__item-primary-content">
+            주소 테스트
+        </span>
+            <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-10">
+                    <input type="checkbox" id="list-checkbox-10" class="mdl-checkbox__input"/>
+                </label>
+            </span>
         </li>
     </ul>
+
+    <div class="page-navigation">
+        <button class="page-move left"> < </button>
+        <div id="page-index-list"></div>
+        <button class="page-move right"> > </button>
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored submit-button">
+        선택완료
+    </button>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+<script type="text/javascript" src="/javascripts/handlebars-v4.0.11.js"></script>
 <script src="/javascripts/vote1.js"></script>

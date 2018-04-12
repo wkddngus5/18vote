@@ -1,0 +1,351 @@
+/*선거인단 등록*/
+.apply-zone-wrapper {
+    width: 384px;
+    height: 499px;
+    margin: auto;
+}
+
+.apply-zone {
+    width: 358px;
+    height: 492.391px;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin: -10px 15px 0 13px;
+    border: solid;
+    text-align: center;
+    z-index: 11;
+}
+
+.apply-zone h1 {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apply-zone h2 {
+    margin: 3px 0 3px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.apply-zone .main-image {
+    width: 80%;
+}
+
+.apply-zone p {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+
+.apply-zone h6 {
+    margin: 3px 0 10px 0;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.apply-zone .apply-btn {
+    margin: 0 0 10px 0;
+    padding: 5px 0 5px 0;
+    border: solid;
+    border-radius: 0.8em;
+    border-width: 2px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FFB635;
+}
+
+.apply-zone-wrapper .under-cover {
+    margin: 30px 0 0 20px;
+    position: relative;
+    background-color: #FFB635;
+    border: solid;
+    width: 363px;
+    height: 493px;
+    z-index: 10;
+}
+
+.dot {
+    background-image: url("/images/dot.png");
+    background-repeat: no-repeat;
+    background-size: 156%;
+    position: relative;
+    width: 110px;
+    height: 160px;
+    z-index: 0;
+}
+.apply-zone-wrapper .dot {
+    vertical-align: bottom;
+    margin: -108px 0 0 0;
+}
+
+/*추진 일정*/
+
+.schedule {
+    margin: 50px auto;
+    width: 384px;
+    text-align: center;
+}
+
+.schedule h2 {
+    font-weight: 600;
+    font-size: 17px;
+    margin: -170px 0 10px 0;
+}
+
+.schedule-box {
+    background-color: #FFFFFF;
+    position: absolute;
+    margin: 0 0 0 14px;
+    width: 315px;
+    border: solid;
+    padding: 0 20px 0 20px;
+    text-align: left;
+    z-index: 11;
+}
+
+.schedule-box ul {
+    list-style: none;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #CCC;
+}
+
+.schedule li {
+    margin: 15px 0 15px 0;
+}
+.schedule p.date {
+    margin: 0 0 0 0;
+    font-size: 11px;
+    color: #777;
+}
+
+.schedule h6 {
+    margin: 4px 0 4px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    line-height: 140%;
+}
+
+.tab-1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+.tab-4 {
+    display: inline;
+    margin-left: 95px;
+}
+
+.tab-5 {
+    display: inline;
+    margin-left: 120px;
+}
+
+.schedule .under-cover {
+    width: 350px;
+    height: 120px;
+    background-color: #FFB635;
+    border: solid;
+    margin: -75px 0 0 -10px;
+}
+
+.schedule .under-cover.black{
+    z-index: 10;
+    position: relative;
+    background-color: #000;
+    width: 100px;
+    height: 150px;
+    margin: 0 0 0 -10px;
+}
+
+.schedule .dot {
+    margin: 311px 0 0 0;
+    z-index: 9;
+}
+
+.schedule .line {
+    background-image: url("/images/line.png");
+    width: 90px;
+    height: 40px;
+    background-size: 128%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+    margin: -56px 0 0 300px;
+}
+
+/*후원*/
+.support {
+    margin: auto;
+    width: 384px;
+}
+
+.support h2 {
+    margin: -100px 0 5px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.support .under-cover {
+    width: 360px;
+    height: 115px;
+    background-color: #000;
+    z-index: 9;
+    margin: 0 0 0 10px;
+}
+
+.support-box {
+    margin: -105px 0 0 25px;
+    width: 330px;
+    background-image: url("/images/page.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5px;
+    z-index: 11;
+    padding: 5px 15px;
+}
+
+.support p {
+    font-size: 13px;
+    color: #666;
+}
+
+/*캠페인 공식 계정*/
+.account {
+    width: 384px;
+    margin: 30px auto;
+}
+
+.account h2 {
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+
+.account ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.account a {
+    color: #000000;
+}
+
+.account li {
+    margin: 0 10px 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #64ffda;
+    border: solid;
+    border-width: 2px;
+    border-radius: 2em;
+}
+
+/*소식*/
+.news {
+    width: 384px;
+    margin: 30px auto;
+}
+
+.news h2 {
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+
+.news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news li {
+    width: 330px;
+    border: solid;
+    margin: 20px auto;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.news .pin {
+    width: 10px;
+    height: 10px;
+    border-radius: 2em;
+    border: solid;
+    border-width: 2px;
+    background-color: #FFB635;
+    display: inline-block;
+}
+
+.news .pin.left {
+    margin-left: 10px;
+}
+
+.news .pin.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.news .pin.top {
+    margin-top: 10px;
+}
+
+.news .pin.bottom {
+    margin-bottom: 10px;
+}
+
+.news img {
+    display: block;
+    margin: -3px auto;
+    width: 280px;
+    height: 173px;
+}
+
+.news h5 {
+    margin: 20px 0 30px 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.news .under-cover {
+    position: relative;
+    background-color: #FFB635;
+    width: 140px;
+    height: 140px;
+    margin: -15px 0 -140px 230px;
+    z-index: -2;
+}
+
+.news .line {
+    background-image: url("/images/line.png");
+    width: 105px;
+    height: 55px;
+    background-size: 138%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    transform: rotate(125deg);
+    margin: 0 0 -50px 260px;
+}
+
+.news .dot {
+    margin: -70px 0 0 -10px;
+    z-index: -1;
+    width: 160px;
+    background-size: 107%;
+}
+
+.news li.second {
+    margin-top: -137px;
+}
+
+.news .under-cover.second {
+    margin: -151px 0 0 1px;
+    height: 200px;
+
+}

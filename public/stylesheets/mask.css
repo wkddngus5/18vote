@@ -1,0 +1,65 @@
+.demo-1 {
+    background: url(/images/nature-sprite.png) no-repeat -9999px -9999px;
+    background-size: 0;
+}
+
+.demo-1 .page-view {
+    background: url(/images/nature-sprite-2.png) no-repeat -9999px -9999px;
+    background-size: 0;
+}
+
+.demo-1 .page-view .project:nth-child(1) {
+    background-image: url(/images/nature-1.jpg);
+}
+
+.demo-1 .page-view .project:nth-child(2) {
+    background-image: url(/images/nature-2.jpg);
+}
+
+.demo-1 .page-view .project:nth-child(3) {
+    background-image: url(/images/nature-3.jpg);
+}
+
+.demo-1 .page-view .project:nth-child(4) {
+    background-image: url(/images/nature-4.jpg);
+}
+
+.demo-1 .page-view .project:nth-child(even).hide {
+    -webkit-mask: url(/images/nature-sprite.png);
+    mask: url(/images/nature-sprite.png);
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    -webkit-animation: mask-play 1.4s steps(22) forwards;
+    animation: mask-play 1.4s steps(22) forwards;
+}
+
+.demo-1 .page-view .project:nth-child(odd).hide {
+    -webkit-mask: url(/images/nature-sprite-2.png);
+    mask: url(/images/nature-sprite-2.png);
+    -webkit-mask-size: 7100% 100%;
+    mask-size: 7100% 100%;
+    -webkit-animation: mask-play 1.4s steps(70) forwards;
+    animation: mask-play 1.4s steps(70) forwards;
+}
+
+@-webkit-keyframes mask-play {
+    from {
+        -webkit-mask-position: 0% 0;
+        mask-position: 0% 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes mask-play {
+    from {
+        -webkit-mask-position: 0% 0;
+        mask-position: 0% 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}

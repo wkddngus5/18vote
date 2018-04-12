@@ -1,0 +1,58 @@
+#sortable li {
+    list-style: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    padding : 10px;
+}
+
+.android-slogan {
+    font-size: 40px;
+}
+
+.highlight {
+    display: inline-block;
+    font-size: 40px;
+    color: #6ab344;
+    font-weight: 800;
+}
+
+.logo-font.android-create-character {
+    font-size: 50px;
+    padding: 300px 0 0 0;
+}
+
+.regist-button {
+    font-size: 40px;
+    height: 50px;
+}
+
+.time-remain {
+    margin: 30px 0 0 0;
+    font-size: 5vw;
+}
+
+.android-card-container .mdl-card__media img {
+    height: 100%;
+}
+
+footer {
+    font-size: 15px;
+}
+
+@media (max-width: 750px) {
+    .android-slogan {
+        font-size: 5vw;
+    }
+
+    .highlight {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 840px) {
+    .logo-font.android-create-character {
+        font-size: 50px;
+        padding: 120px 0 0 0;
+    }
+}
