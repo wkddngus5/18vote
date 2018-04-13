@@ -4,7 +4,7 @@
         <h2>지금 청소년 선거인단에 등록해주세요!</h2>
         <img class="main-image" src="/images/image.png">
         <p>등록 마감시간까지 앞으로</p>
-        <h6>00일 00시간 00분 00초</h6>
+        <h6 class="time-count">00일 00시간 00분 00초</h6>
         <button class="apply-btn">등록하기</button>
     </div>
     <div class="under-cover"></div>
@@ -16,35 +16,30 @@
     <div class="schedule-box">
         <ul>
             <li class="todo-item">
-                <p class="date">~4/30</p>
-                <h6>추진위원회 회원모집</h6>
+                <p class="date">5/1~6/13</p>
+                <h6>청소년 모의투표 선거인단 모집</h6>
             </li>
 
             <li class="todo-item">
-                <p class="date">~4/30</p>
-                <h6>내부 경선 투표 진행</h6>
-                <h6>
-                    온라인 투표: 5/2(수)~3(목)24시까지 <br>
-                    오프라인 현장 투표 <br>
-                    <div class="tab-1">- 5/4(금) : 08:00 ~ 20:00</div><br>
-                    <div class="tab-1">- 5/5(토) : 08:00 ~ 17:00</div>
-                </h6>
+                <p class="date">6/8(06:00~18:00), 6/9(06:00~18:00)</p>
+                <h6>온라인 사전투표</h6>
             </li>
             <li class="todo-item">
-                <p class="date">5/5</p>
-                <h6>서울촛불교육감 후보 결정</h6>
+                <p class="date">6/13(06:00~18:00)</p>
+                <h6>오프라인 현장투표 및 온라인 투표</h6>
             </li>
             <li class="todo-item">
                 <p class="date">6/13</p>
-                <h6>6.13 지방선거 서울교육감 선거</h6>
+                <h6>6.13 지방선거 청소년 모의투표 결과 발표</h6>
             </li>
         </ul>
-        <h6>선거인단 등록기간 : 2018.03.01(목) ~ 04.20(금) 18:00</h6>
+        <h6>선거인단 등록기간 : 2018.05.01(목) ~ 06.13(금) 18:00</h6>
         <h6>
-            모의투표 기간 : 온라인 투표 : 5/2(수)~3(목) 24시까지<br>
-            <div class="tab-4">오프라인 현장 투표</div><br>
-            <div class="tab-5">- 5/4(금) : 08:00 ~ 20:00</div><br>
-            <div class="tab-5">- 5/5(토) : 08:00 ~ 17:00</div>
+            모의투표 기간 :<br>
+            <div class="tab-1">온라인 투표</div><br>
+            <div class="tab-2">- 5/8(금), 9(토), 13(수) 각 06:00~18:00</div><br>
+            <div class="tab-1">오프라인 현장 투표</div><br>
+            <div class="tab-2">- 6/13(수) : 06:00 ~ 18:00</div><br>
         </h6>
     </div>
     <div class="dot"></div>
@@ -99,4 +94,78 @@
             <div class="pin right bottom"></div>
         </li>
     </ul>
+</div>
+<div class="dim"></div>
+<div class="modal">
+    <div class="modal-header">
+        <h2>청소년 선거인단 등록</h2>
+        <button class="close-btn">닫기</button>
+    </div>
+    <form class="page-1" action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="name" pattern="^[가-힣]{2,4}|[a-zA-Z]{2,10}\s[a-zA-Z]{2,10}$">
+            <label class="mdl-textfield__label" for="sample3">이름*</label>
+            <span class="mdl-textfield__error">올바르지 않은 형식입니다.</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="birthday" pattern="^(19|20)\d{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[0-1])$">
+            <label class="mdl-textfield__label" for="sample3">생년월일(예:19940404)*</label>
+            <span class="mdl-textfield__error">생년월일순 8자리 숫자로 작성해주세요!</span>
+        </div>
+        <div>
+            <h5>성별*</h5>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1" data-item="1">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                <span class="mdl-radio__label">남성</span>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2" data-item="2">
+                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                <span class="mdl-radio__label">여성</span>
+            </label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="phone" pattern="^\d{3}-\d{3,4}-\d{4}$">
+            <label class="mdl-textfield__label" for="sample3">휴대폰번호*</label>
+            <span class="mdl-textfield__error">000-0000-0000형식으로 입력해주세요!</span>
+        </div>
+        <button class="search-address-btn">주소 검색*</button>
+        <p class="selected-address" id="address">&nbsp;</p>
+        <input type="hidden" id="address1" value="">
+        <input type="hidden" id="address2" value="">
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            id="submit-btn1">
+            다음
+        </button>
+        <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    </form>
+
+    <form class="page-2" action="#">
+        <input id="token" type="hidden" value="">
+        <h5>도착한 인증번호 4자리를 입력해주세요.</h5>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input code" type="text" id="sample3" maxlength="1">
+            <label class="mdl-textfield__label" for="sample3"></label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input code" type="text" id="sample3" maxlength="1">
+            <label class="mdl-textfield__label" for="sample3"></label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input code" type="text" id="sample3" maxlength="1">
+            <label class="mdl-textfield__label" for="sample3"></label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input code" type="text" id="sample3" maxlength="1">
+            <label class="mdl-textfield__label" for="sample3"></label>
+        </div>
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            id="submit-btn2">
+            다음
+        </button>
+        <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    </form>
+
 </div>

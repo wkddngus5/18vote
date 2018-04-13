@@ -32,4 +32,23 @@ router.get('/main', (req, res) => {
   });
 });
 
+router.post('/elector', (req, res) => {
+  console.log('I GOT IT!', req.body);
+  const resData = {
+    'msg': '나는야 메세지',
+    'token': '토큰토큰'
+  };
+  res.json(resData);
+});
+
+router.post('/elector/code', (req, res) => {
+  console.log('I GOT IT!', req.body);
+  const resData = {
+    'elect': 'You be a elector'
+  };
+  res.json(resData);
+});
+
+
+
 module.exports = router;

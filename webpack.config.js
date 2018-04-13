@@ -1,18 +1,18 @@
-var path = require("path");
+const path = require("path");
+
 module.exports = {
   entry: {
-    app: ["/public/javascripts/index.js"]
+    app: ["./public/javascripts/index.js"]
   },
   output: {
-    path: "/dist",
-    publicPath: "/",
+    path: __dirname + "/public/dist",
     filename: "bundle.js"
   },
   module: {
-    loaders: [
-      {
-        loader: "babel-loader",
-      }
-    ]
-  },
+    rules: [{
+      use: [{
+        loader: "babel-loader"
+      }]
+    }]
+  }
 };
